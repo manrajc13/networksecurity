@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/Lenovo/OneDrive/Desktop/NetworkSecuirty/mlruns/0/models/m-cf90f62b833a4ecc801a09d72b35e89f/artifacts
+creation_timestamp: 1753019045469
+experiment_id: '0'
+last_updated_timestamp: 1753019065773
+model_id: m-cf90f62b833a4ecc801a09d72b35e89f
+model_type: null
+name: model
+source_run_id: 64b2948c93114df7be511399d30d0966
+status: 2
+status_message: null

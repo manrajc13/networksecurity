@@ -1,0 +1,32 @@
+[ 2025-07-20 21:17:12,544 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-07-20 21:17:12,557 ] 107 dagshub - INFO - Accessing as manrajc13
+[ 2025-07-20 21:17:13,395 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/manrajc13/networksecurity "HTTP/1.1 200 OK"
+[ 2025-07-20 21:17:13,964 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-07-20 21:17:13,966 ] 107 dagshub - INFO - Initialized MLflow to track repo "manrajc13/networksecurity"
+[ 2025-07-20 21:17:13,967 ] 107 dagshub - INFO - Repository manrajc13/networksecurity initialized!
+[ 2025-07-20 21:18:04,428 ] 42 root - INFO - Start data Ingestion
+[ 2025-07-20 21:18:20,673 ] 64 root - INFO - Performed train test split on the dataframe
+[ 2025-07-20 21:18:20,673 ] 65 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2025-07-20 21:18:20,674 ] 71 root - INFO - Exporting train and test file path.
+[ 2025-07-20 21:18:20,837 ] 80 root - INFO - Exported train and test file path.
+[ 2025-07-20 21:18:20,838 ] 45 root - INFO - Data Ingestion completed and artifact: DataIngestionArtifact(trained_file_path='Artifacts\\07_20_2025_21_06\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\07_20_2025_21_06\\data_ingestion\\ingested\\test.csv')
+[ 2025-07-20 21:18:20,860 ] 55 root - INFO - Initiate the data Validation
+[ 2025-07-20 21:18:20,995 ] 33 root - INFO - Required number of columns : 31
+[ 2025-07-20 21:18:20,995 ] 34 root - INFO - Data frame has columns : 31
+[ 2025-07-20 21:18:20,995 ] 33 root - INFO - Required number of columns : 31
+[ 2025-07-20 21:18:20,995 ] 34 root - INFO - Data frame has columns : 31
+[ 2025-07-20 21:18:21,484 ] 63 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[ 2025-07-20 21:18:21,484 ] 65 root - INFO - Starting data transformation
+[ 2025-07-20 21:18:21,627 ] 48 root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+[ 2025-07-20 21:18:21,628 ] 53 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2025-07-20 21:18:21,661 ] 48 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-07-20 21:18:21,669 ] 52 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-07-20 21:18:21,670 ] 48 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-07-20 21:18:21,707 ] 52 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-07-20 21:18:42,389 ] 70 root - WARNING - Skipping model logging to MLflow: INTERNAL_ERROR: Response: {'error': 'unsupported endpoint, please contact support@dagshub.com'}
+[ 2025-07-20 21:18:52,932 ] 70 root - WARNING - Skipping model logging to MLflow: INTERNAL_ERROR: Response: {'error': 'unsupported endpoint, please contact support@dagshub.com'}
+[ 2025-07-20 21:18:54,938 ] 48 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-07-20 21:18:54,942 ] 52 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-07-20 21:18:54,942 ] 48 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-07-20 21:18:55,024 ] 52 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-07-20 21:18:55,025 ] 152 root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\07_20_2025_21_06\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9912130087869913, precision_score=0.9899132539842647, recall_score=0.9925161812297735), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9731958762886598, precision_score=0.9735973597359736, recall_score=0.9727947238252267))

@@ -2,7 +2,6 @@
 import sys
 
 
-
 from networksecurity.logging import logger
 
 class NetworkSecurityException(Exception):

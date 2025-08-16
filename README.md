@@ -84,3 +84,6 @@ cd anti-phishing-pipeline
 ```bash
 pip install -r requirements.txt
 ```
+
+### 3. GitHub Actions 
+--> used for github actions to automate the deployment of the model to the cloud AWS EC2 instance

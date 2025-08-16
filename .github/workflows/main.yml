@@ -1,4 +1,4 @@
-name: workflow 
+name: workflow
 
 on: 
   push: 
@@ -6,7 +6,6 @@ on:
       - main 
     paths-ignore:
       - 'README.md'
-
 
 jobs:
   integration:

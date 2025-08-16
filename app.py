@@ -1,12 +1,12 @@
 import sys
 import os
-
+from dotenv import load_dotenv
 import certifi
 ca = certifi.where()
 
-from dotenv import load_dotenv
 load_dotenv()
-mongo_db_url = os.getenv("MONGODB_URL_KEY")
+mongo_db_url = os.getenv("MONGODB_URL")
+print("Importing environment variables: ###")
 print(mongo_db_url)
 import pymongo
 from networksecurity.exception.exception import NetworkSecurityException
@@ -19,6 +19,11 @@ from uvicorn import run as app_run
 from fastapi.responses import Response
 from starlette.responses import RedirectResponse
 import pandas as pd
+import os
+import certifi
+
+# Set this before any HTTP/SSL network request
+os.environ["REQUESTS_CA_BUNDLE"] = certifi.where()
 
 from networksecurity.utils.main_utils.utils import load_object
 

@@ -1,5 +1,6 @@
 from networksecurity.exception.exception import NetworkSecurityException
 from networksecurity.logging.logger import logging  
+import certifi
 
 
 ## configuration of the data ingestion config 
@@ -33,7 +34,10 @@ class DataIngestion:
         try:
             database_name = self.data_ingestion_config.database_name
             collection_name = self.data_ingestion_config.collection_name
-            self.mongo_client = pymongo.MongoClient(MONGODB_URL)
+            self.mongo_client = pymongo.MongoClient(MONGODB_URL,
+                                tls=True,
+                                tlsCAFile=certifi.where()
+                                )
             collection = self.mongo_client[database_name][collection_name]
             df = pd.DataFrame(list(collection.find()))
             if "_id" in df.columns.to_list():

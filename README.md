@@ -78,4 +78,9 @@ This system aims to detect such phishing attempts based on behavioral and struct
 ```bash
 git clone https://github.com/your-username/anti-phishing-pipeline.git
 cd anti-phishing-pipeline
+```
 
+### 2. Install dependencies 
+```bash
+pip install -r requirements.txt
+```
